@@ -7,7 +7,7 @@ import path from 'path'
 import { fileURLToPath } from 'url';
 
 figlet(
-  'ULTRA MD',
+  'ISLAMICK CYBER CHAT',
   {
     font: 'Ghost',
     horizontalLayout: 'default',
@@ -66,7 +66,7 @@ async function start(file) {
   })
 
   p.on('message', data => {
-    console.log(chalk.cyan(`✔️RECEIVED ${data}`))
+    console.log(chalk.cyan(`💜✨RECEIVED ${data}`))
     switch (data) {
       case 'reset':
         p.kill()
@@ -81,7 +81,7 @@ async function start(file) {
 
   p.on('exit', code => {
     isRunning = false
-    console.error(chalk.red(`❌Exited with code: ${code}`))
+    console.error(chalk.red(`🥴Exited with code: ${code}`))
 
     if (code === 0) return
 
